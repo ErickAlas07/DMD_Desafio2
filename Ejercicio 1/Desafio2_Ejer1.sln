@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35130.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Desafio2_Ejer1", "Desafio2_Ejer1\Desafio2_Ejer1.dwproj", "{8309C509-8844-457E-964D-33011F6A3DFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8309C509-8844-457E-964D-33011F6A3DFC}.Development|Default.ActiveCfg = Development
+		{8309C509-8844-457E-964D-33011F6A3DFC}.Development|Default.Build.0 = Development
+		{8309C509-8844-457E-964D-33011F6A3DFC}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5F145FD-4254-43B3-BC05-706E42529FD7}
+	EndGlobalSection
+EndGlobal
