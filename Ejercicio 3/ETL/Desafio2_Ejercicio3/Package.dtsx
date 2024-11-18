@@ -1,0 +1,2505 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="11/15/2024 11:51:36 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="ERICK"
+  DTS:CreatorName="ERICK\Erick"
+  DTS:DTSID="{77780916-B5DC-45F5-95F4-E70DE6CC942B}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{35634A91-0438-41D5-95B7-B0A9E5607609}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador CSV Anual]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{5B9000DD-92EB-4BC7-81FD-A92A645FB46C}"
+      DTS:ObjectName="Administrador CSV Anual">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\Erick\OneDrive\Escritorio\UDB\DMD\Desafío 2\Ejercicio 3\Annual_Mean_Global_Surface_Temperature_Anomalies.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Year"
+              DTS:DTSID="{234D295D-3D1A-4FDF-A83A-AE96F595BF3F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Anomaly"
+              DTS:DTSID="{8749B598-EC14-40CB-8395-65E14322A441}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador CSV Regional]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{0E4F7948-1535-449D-9691-23CB20FFAD8A}"
+      DTS:ObjectName="Administrador CSV Regional">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\Erick\OneDrive\Escritorio\UDB\DMD\Desafío 2\Ejercicio 3\Regional_Mean_Temperature_Anomalies.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Year"
+              DTS:DTSID="{0C1661D1-E180-4417-8187-105E0E1F8540}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Glob"
+              DTS:DTSID="{68B8A4A0-CB4E-48FA-B2A7-2777402D6EB7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NHem"
+              DTS:DTSID="{D30C3B4E-6C43-4C8C-9CE5-707D48CF6488}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SHem"
+              DTS:DTSID="{AEED5FEB-D46C-44DB-901A-889EC44D35C4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="24N-90N"
+              DTS:DTSID="{3EB8988B-0F45-46AB-AA31-16BE066BF276}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="24S-24N"
+              DTS:DTSID="{9F2A4A4D-5B67-443E-83FA-2AFBF2AB3D77}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="90S-24S"
+              DTS:DTSID="{ADBB8167-E488-4840-B30A-C90E6C5705DC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="64N-90N"
+              DTS:DTSID="{0498ADEA-BB7A-41A2-8FF1-5E1C75EA3C81}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="44N-64N"
+              DTS:DTSID="{FB1DDB65-C834-47F6-BC64-6B0C95CDB3ED}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="24N-44N"
+              DTS:DTSID="{34382CD2-9F7D-4547-99CA-2C01F43D1048}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EQU-24N"
+              DTS:DTSID="{77146645-1BC4-4066-93FA-B1F6213D1278}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="24S-EQU"
+              DTS:DTSID="{9C6ACA23-9183-46CB-A706-80DD81BFEF8D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="44S-24S"
+              DTS:DTSID="{9C313E6E-9712-4F88-B6D8-6B509881D7D9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="64S-44S"
+              DTS:DTSID="{FA600FAD-3F75-4732-815B-0017D777B162}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="90S-64S"
+              DTS:DTSID="{2BC350D2-A070-4B74-A269-AEFF437F0ED0}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ERICK.climate_data]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{0C5E7A4C-A363-4DFB-AA66-5701B33D13D0}"
+      DTS:ObjectName="ERICK.climate_data">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=ERICK;Initial Catalog=climate_data;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{0C5E7A4C-A363-4DFB-AA66-5701B33D13D0}ERICK.climate_data;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ERICK.climate_data1]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{902CF525-3C77-492E-BC14-9E62C5C300A3}"
+      DTS:ObjectName="ERICK.climate_data1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=ERICK;Initial Catalog=climate_data;Integrated Security=True;Application Name=SSIS-Package-{902CF525-3C77-492E-BC14-9E62C5C300A3}ERICK.climate_data1;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\ETL Clima"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{EAE9708A-F3FE-4937-A447-990184CF0B1B}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ETL Clima"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\ETL Clima\Convertir a datos numéricos"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Conversión de datos;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+              description="Conversión de datos"
+              name="Convertir a datos numéricos"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\ETL Clima\Convertir a datos numéricos.Inputs[Entrada de conversión de datos]"
+                  name="Entrada de conversión de datos">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Inputs[Entrada de conversión de datos].Columns[Year]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Year"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[Year]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Inputs[Entrada de conversión de datos].Columns[Glob]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Glob"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[Glob]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Inputs[Entrada de conversión de datos].Columns[NHem]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="NHem"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[NHem]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Inputs[Entrada de conversión de datos].Columns[SHem]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="SHem"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[SHem]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Inputs[Entrada de conversión de datos].Columns[24N-90N]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="24N-90N"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[24N-90N]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Inputs[Entrada de conversión de datos].Columns[24S-24N]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="24S-24N"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[24S-24N]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Inputs[Entrada de conversión de datos].Columns[90S-24S]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="90S-24S"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[90S-24S]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Inputs[Entrada de conversión de datos].Columns[64N-90N]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="64N-90N"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[64N-90N]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Inputs[Entrada de conversión de datos].Columns[44N-64N]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="44N-64N"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[44N-64N]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Inputs[Entrada de conversión de datos].Columns[24N-44N]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="24N-44N"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[24N-44N]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Inputs[Entrada de conversión de datos].Columns[EQU-24N]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="EQU-24N"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[EQU-24N]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Inputs[Entrada de conversión de datos].Columns[24S-EQU]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="24S-EQU"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[24S-EQU]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Inputs[Entrada de conversión de datos].Columns[44S-24S]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="44S-24S"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[44S-24S]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Inputs[Entrada de conversión de datos].Columns[64S-44S]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="64S-44S"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[64S-44S]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Inputs[Entrada de conversión de datos].Columns[90S-64S]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="90S-64S"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[90S-64S]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos]"
+                  exclusionGroup="1"
+                  name="Salida de conversión de datos"
+                  synchronousInputId="Package\ETL Clima\Convertir a datos numéricos.Inputs[Entrada de conversión de datos]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of Year]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of Year]"
+                      name="Copy of Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[Year]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of Glob]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of Glob]"
+                      name="Copy of Glob"
+                      scale="2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[Glob]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of NHem]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of NHem]"
+                      name="Copy of NHem"
+                      scale="2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[NHem]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of SHem]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of SHem]"
+                      name="Copy of SHem"
+                      scale="2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[SHem]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 24N-90N]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 24N-90N]"
+                      name="Copy of 24N-90N"
+                      scale="2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[24N-90N]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 24S-24N]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 24S-24N]"
+                      name="Copy of 24S-24N"
+                      scale="2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[24S-24N]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 90S-24S]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 90S-24S]"
+                      name="Copy of 90S-24S"
+                      scale="2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[90S-24S]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 64N-90N]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 64N-90N]"
+                      name="Copy of 64N-90N"
+                      scale="2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[64N-90N]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 44N-64N]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 44N-64N]"
+                      name="Copy of 44N-64N"
+                      scale="2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[44N-64N]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 24N-44N]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 24N-44N]"
+                      name="Copy of 24N-44N"
+                      scale="2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[24N-44N]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of EQU-24N]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of EQU-24N]"
+                      name="Copy of EQU-24N"
+                      scale="2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[EQU-24N]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 24S-EQU]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 24S-EQU]"
+                      name="Copy of 24S-EQU"
+                      scale="2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[24S-EQU]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 44S-24S]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 44S-24S]"
+                      name="Copy of 44S-24S"
+                      scale="2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[44S-24S]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 64S-44S]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 64S-44S]"
+                      name="Copy of 64S-44S"
+                      scale="2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[64S-44S]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 90S-64S]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 90S-64S]"
+                      name="Copy of 90S-64S"
+                      scale="2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[90S-64S]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de error de conversión de datos]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de conversión de datos"
+                  synchronousInputId="Package\ETL Clima\Convertir a datos numéricos.Inputs[Entrada de conversión de datos]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL Clima\Convertir a Números"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Conversión de datos;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+              description="Conversión de datos"
+              name="Convertir a Números"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\ETL Clima\Convertir a Números.Inputs[Entrada de conversión de datos]"
+                  name="Entrada de conversión de datos">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL Clima\Convertir a Números.Inputs[Entrada de conversión de datos].Columns[Anomaly]"
+                      cachedDataType="r4"
+                      cachedName="Anomaly"
+                      lineageId="Package\ETL Clima\Origen Datos Anual.Outputs[Salida de origen de archivo plano].Columns[Anomaly]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Convertir a Números.Inputs[Entrada de conversión de datos].Columns[Year]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Year"
+                      lineageId="Package\ETL Clima\Origen Datos Anual.Outputs[Salida de origen de archivo plano].Columns[Year]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL Clima\Convertir a Números.Outputs[Salida de conversión de datos]"
+                  exclusionGroup="1"
+                  name="Salida de conversión de datos"
+                  synchronousInputId="Package\ETL Clima\Convertir a Números.Inputs[Entrada de conversión de datos]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Clima\Convertir a Números.Outputs[Salida de conversión de datos].Columns[Copy of Anomaly]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL Clima\Convertir a Números.Outputs[Salida de conversión de datos].Columns[Copy of Anomaly]"
+                      name="Copy of Anomaly"
+                      scale="2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL Clima\Origen Datos Anual.Outputs[Salida de origen de archivo plano].Columns[Anomaly]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Convertir a Números.Outputs[Salida de conversión de datos].Columns[Copy of Year]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL Clima\Convertir a Números.Outputs[Salida de conversión de datos].Columns[Copy of Year]"
+                      name="Copy of Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL Clima\Origen Datos Anual.Outputs[Salida de origen de archivo plano].Columns[Year]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL Clima\Convertir a Números.Outputs[Salida de error de conversión de datos]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de conversión de datos"
+                  synchronousInputId="Package\ETL Clima\Convertir a Números.Inputs[Entrada de conversión de datos]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Clima\Convertir a Números.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL Clima\Convertir a Números.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL Clima\Convertir a Números.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL Clima\Convertir a Números.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL Clima\Convertir a Texto"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Columna derivada;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+              description="Crea nuevos valores de columna aplicando expresiones a las columnas de entrada de la transformación. Crea nuevas columnas o sobrescribe las columnas existentes. Por ejemplo, se concatenan los valores de las columnas 'nombre' y 'apellidos' para crear una columna 'nombre completo'."
+              name="Convertir a Texto"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\ETL Clima\Convertir a Texto.Inputs[Entrada de columna derivada]"
+                  description="Entrada en la transformación Columna derivada"
+                  name="Entrada de columna derivada">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL Clima\Convertir a Texto.Inputs[Entrada de columna derivada].Columns[Year + Mes]"
+                      cachedDataType="i4"
+                      cachedName="Year + Mes"
+                      lineageId="Package\ETL Clima\Origen Datos Mensual.Outputs[Salida de origen de archivo plano].Columns[Year + Mes]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL Clima\Convertir a Texto.Outputs[Salida de columna derivada]"
+                  description="Salida predeterminada de la transformación Columna derivada"
+                  exclusionGroup="1"
+                  name="Salida de columna derivada"
+                  synchronousInputId="Package\ETL Clima\Convertir a Texto.Inputs[Entrada de columna derivada]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Clima\Convertir a Texto.Outputs[Salida de columna derivada].Columns[YearMonth_Text]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Cálculo"
+                      errorRowDisposition="FailComponent"
+                      length="6"
+                      lineageId="Package\ETL Clima\Convertir a Texto.Outputs[Salida de columna derivada].Columns[YearMonth_Text]"
+                      name="YearMonth_Text"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expresión de columna derivada"
+                          name="Expression">(DT_STR,6,1252)#{Package\ETL Clima\Origen Datos Mensual.Outputs[Salida de origen de archivo plano].Columns[Year + Mes]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expresión descriptiva de columna derivada"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_STR,6,1252)[Year + Mes]</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL Clima\Convertir a Texto.Outputs[Salida de error de columna derivada]"
+                  description="Salida de error de la transformación Columna derivada"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de columna derivada"
+                  synchronousInputId="Package\ETL Clima\Convertir a Texto.Inputs[Entrada de columna derivada]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Clima\Convertir a Texto.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL Clima\Convertir a Texto.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL Clima\Convertir a Texto.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL Clima\Convertir a Texto.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL Clima\Destino Tabla Mensual"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
+              description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
+              name="Destino Tabla Mensual"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de destino."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"monthly_anomalies"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifique el número de filas por lote. El valor predeterminado es 0, que utiliza el mismo tamaño que el búfer interno de SSIS. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si se debe usar la interfaz SqlBulkCopy para mejorar el rendimiento de las operaciones de inserción masiva. No todos los proveedores admiten esta interfaz."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL Clima\Destino Tabla Mensual.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ERICK.climate_data1]"
+                  connectionManagerRefId="Package.ConnectionManagers[ERICK.climate_data1]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ETL Clima\Destino Tabla Mensual.Inputs[Entrada de destino de ADO NET]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de ADO NET">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL Clima\Destino Tabla Mensual.Inputs[Entrada de destino de ADO NET].Columns[Anomaly]"
+                      cachedDataType="r4"
+                      cachedName="Anomaly"
+                      externalMetadataColumnId="Package\ETL Clima\Destino Tabla Mensual.Inputs[Entrada de destino de ADO NET].ExternalColumns[Anomaly]"
+                      lineageId="Package\ETL Clima\Origen Datos Mensual.Outputs[Salida de origen de archivo plano].Columns[Anomaly]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Destino Tabla Mensual.Inputs[Entrada de destino de ADO NET].Columns[Year]"
+                      cachedDataType="wstr"
+                      cachedLength="4"
+                      cachedName="Year"
+                      externalMetadataColumnId="Package\ETL Clima\Destino Tabla Mensual.Inputs[Entrada de destino de ADO NET].ExternalColumns[Year]"
+                      lineageId="Package\ETL Clima\Dividir columnas.Outputs[Salida de columna derivada].Columns[Year]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Destino Tabla Mensual.Inputs[Entrada de destino de ADO NET].Columns[Month]"
+                      cachedDataType="wstr"
+                      cachedLength="2"
+                      cachedName="Month"
+                      externalMetadataColumnId="Package\ETL Clima\Destino Tabla Mensual.Inputs[Entrada de destino de ADO NET].ExternalColumns[Month]"
+                      lineageId="Package\ETL Clima\Dividir columnas.Outputs[Salida de columna derivada].Columns[Month]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Destino Tabla Mensual.Inputs[Entrada de destino de ADO NET].ExternalColumns[Year]"
+                      dataType="i4"
+                      name="Year" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Destino Tabla Mensual.Inputs[Entrada de destino de ADO NET].ExternalColumns[Month]"
+                      dataType="i2"
+                      name="Month" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Destino Tabla Mensual.Inputs[Entrada de destino de ADO NET].ExternalColumns[Anomaly]"
+                      dataType="r4"
+                      name="Anomaly" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL Clima\Destino Tabla Mensual.Outputs[Salida de error de destino de ADO NET]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de ADO NET"
+                  synchronousInputId="Package\ETL Clima\Destino Tabla Mensual.Inputs[Entrada de destino de ADO NET]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Clima\Destino Tabla Mensual.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL Clima\Destino Tabla Mensual.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL Clima\Destino Tabla Mensual.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL Clima\Destino Tabla Mensual.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL Clima\Destino Tabla Regiones"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
+              description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
+              name="Destino Tabla Regiones"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de destino."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"regional_anomalies"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifique el número de filas por lote. El valor predeterminado es 0, que utiliza el mismo tamaño que el búfer interno de SSIS. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si se debe usar la interfaz SqlBulkCopy para mejorar el rendimiento de las operaciones de inserción masiva. No todos los proveedores admiten esta interfaz."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL Clima\Destino Tabla Regiones.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ERICK.climate_data1]"
+                  connectionManagerRefId="Package.ConnectionManagers[ERICK.climate_data1]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de ADO NET">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].Columns[Year]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Year"
+                      externalMetadataColumnId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[Year]"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[Year]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].Columns[Copy of Glob]"
+                      cachedDataType="decimal"
+                      cachedName="Copy of Glob"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[Global]"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of Glob]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].Columns[Copy of NHem]"
+                      cachedDataType="decimal"
+                      cachedName="Copy of NHem"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[NHem]"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of NHem]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].Columns[Copy of SHem]"
+                      cachedDataType="decimal"
+                      cachedName="Copy of SHem"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[SHem]"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of SHem]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].Columns[Copy of 24N-90N]"
+                      cachedDataType="decimal"
+                      cachedName="Copy of 24N-90N"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[24N-90N]"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 24N-90N]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].Columns[Copy of 24S-24N]"
+                      cachedDataType="decimal"
+                      cachedName="Copy of 24S-24N"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[24S-24N]"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 24S-24N]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].Columns[Copy of 90S-24S]"
+                      cachedDataType="decimal"
+                      cachedName="Copy of 90S-24S"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[90S-24S]"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 90S-24S]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].Columns[Copy of 64N-90N]"
+                      cachedDataType="decimal"
+                      cachedName="Copy of 64N-90N"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[64N-90N]"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 64N-90N]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].Columns[Copy of 44N-64N]"
+                      cachedDataType="decimal"
+                      cachedName="Copy of 44N-64N"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[44N-64N]"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 44N-64N]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].Columns[Copy of 24N-44N]"
+                      cachedDataType="decimal"
+                      cachedName="Copy of 24N-44N"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[24N-44N]"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 24N-44N]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].Columns[Copy of EQU-24N]"
+                      cachedDataType="decimal"
+                      cachedName="Copy of EQU-24N"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[EQU-24N]"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of EQU-24N]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].Columns[Copy of 24S-EQU]"
+                      cachedDataType="decimal"
+                      cachedName="Copy of 24S-EQU"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[24S-EQU]"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 24S-EQU]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].Columns[Copy of 44S-24S]"
+                      cachedDataType="decimal"
+                      cachedName="Copy of 44S-24S"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[44S-24S]"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 44S-24S]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].Columns[Copy of 64S-44S]"
+                      cachedDataType="decimal"
+                      cachedName="Copy of 64S-44S"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[64S-44S]"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 64S-44S]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].Columns[Copy of 90S-64S]"
+                      cachedDataType="decimal"
+                      cachedName="Copy of 90S-64S"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[90S-64S]"
+                      lineageId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos].Columns[Copy of 90S-64S]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[Year]"
+                      dataType="i4"
+                      name="Year" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[Global]"
+                      dataType="numeric"
+                      name="Global"
+                      precision="5"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[NHem]"
+                      dataType="numeric"
+                      name="NHem"
+                      precision="5"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[SHem]"
+                      dataType="numeric"
+                      name="SHem"
+                      precision="5"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[24N-90N]"
+                      dataType="numeric"
+                      name="24N-90N"
+                      precision="5"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[24S-24N]"
+                      dataType="numeric"
+                      name="24S-24N"
+                      precision="5"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[90S-24S]"
+                      dataType="numeric"
+                      name="90S-24S"
+                      precision="5"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[64N-90N]"
+                      dataType="numeric"
+                      name="64N-90N"
+                      precision="5"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[44N-64N]"
+                      dataType="numeric"
+                      name="44N-64N"
+                      precision="5"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[24N-44N]"
+                      dataType="numeric"
+                      name="24N-44N"
+                      precision="5"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[EQU-24N]"
+                      dataType="numeric"
+                      name="EQU-24N"
+                      precision="5"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[24S-EQU]"
+                      dataType="numeric"
+                      name="24S-EQU"
+                      precision="5"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[44S-24S]"
+                      dataType="numeric"
+                      name="44S-24S"
+                      precision="5"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[64S-44S]"
+                      dataType="numeric"
+                      name="64S-44S"
+                      precision="5"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET].ExternalColumns[90S-64S]"
+                      dataType="numeric"
+                      name="90S-64S"
+                      precision="5"
+                      scale="2" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL Clima\Destino Tabla Regiones.Outputs[Salida de error de destino de ADO NET]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de ADO NET"
+                  synchronousInputId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL Clima\Destino Tabla Regiones.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL Clima\Destino Tabla Regiones.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL Clima\Destino Tabla Regiones.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL Clima\Destino Tablas Anual"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
+              description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
+              name="Destino Tablas Anual"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de destino."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"annual_anomalies"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifique el número de filas por lote. El valor predeterminado es 0, que utiliza el mismo tamaño que el búfer interno de SSIS. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si se debe usar la interfaz SqlBulkCopy para mejorar el rendimiento de las operaciones de inserción masiva. No todos los proveedores admiten esta interfaz."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL Clima\Destino Tablas Anual.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ERICK.climate_data1]"
+                  connectionManagerRefId="Package.ConnectionManagers[ERICK.climate_data1]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ETL Clima\Destino Tablas Anual.Inputs[Entrada de destino de ADO NET]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de ADO NET">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL Clima\Destino Tablas Anual.Inputs[Entrada de destino de ADO NET].Columns[Copy of Year]"
+                      cachedDataType="i4"
+                      cachedName="Copy of Year"
+                      externalMetadataColumnId="Package\ETL Clima\Destino Tablas Anual.Inputs[Entrada de destino de ADO NET].ExternalColumns[Year]"
+                      lineageId="Package\ETL Clima\Convertir a Números.Outputs[Salida de conversión de datos].Columns[Copy of Year]" />
+                    <inputColumn
+                      refId="Package\ETL Clima\Destino Tablas Anual.Inputs[Entrada de destino de ADO NET].Columns[Copy of Anomaly]"
+                      cachedDataType="decimal"
+                      cachedName="Copy of Anomaly"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\ETL Clima\Destino Tablas Anual.Inputs[Entrada de destino de ADO NET].ExternalColumns[Anomaly]"
+                      lineageId="Package\ETL Clima\Convertir a Números.Outputs[Salida de conversión de datos].Columns[Copy of Anomaly]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Destino Tablas Anual.Inputs[Entrada de destino de ADO NET].ExternalColumns[Year]"
+                      dataType="i4"
+                      name="Year" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Destino Tablas Anual.Inputs[Entrada de destino de ADO NET].ExternalColumns[Anomaly]"
+                      dataType="numeric"
+                      name="Anomaly"
+                      precision="5"
+                      scale="2" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL Clima\Destino Tablas Anual.Outputs[Salida de error de destino de ADO NET]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de ADO NET"
+                  synchronousInputId="Package\ETL Clima\Destino Tablas Anual.Inputs[Entrada de destino de ADO NET]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Clima\Destino Tablas Anual.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL Clima\Destino Tablas Anual.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL Clima\Destino Tablas Anual.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL Clima\Destino Tablas Anual.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL Clima\Dividir columnas"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Columna derivada;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+              description="Crea nuevos valores de columna aplicando expresiones a las columnas de entrada de la transformación. Crea nuevas columnas o sobrescribe las columnas existentes. Por ejemplo, se concatenan los valores de las columnas 'nombre' y 'apellidos' para crear una columna 'nombre completo'."
+              name="Dividir columnas"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\ETL Clima\Dividir columnas.Inputs[Entrada de columna derivada]"
+                  description="Entrada en la transformación Columna derivada"
+                  name="Entrada de columna derivada">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL Clima\Dividir columnas.Inputs[Entrada de columna derivada].Columns[YearMonth_Text]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="YearMonth_Text"
+                      lineageId="Package\ETL Clima\Convertir a Texto.Outputs[Salida de columna derivada].Columns[YearMonth_Text]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL Clima\Dividir columnas.Outputs[Salida de columna derivada]"
+                  description="Salida predeterminada de la transformación Columna derivada"
+                  exclusionGroup="1"
+                  name="Salida de columna derivada"
+                  synchronousInputId="Package\ETL Clima\Dividir columnas.Inputs[Entrada de columna derivada]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Clima\Dividir columnas.Outputs[Salida de columna derivada].Columns[Year]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Cálculo"
+                      errorRowDisposition="FailComponent"
+                      length="4"
+                      lineageId="Package\ETL Clima\Dividir columnas.Outputs[Salida de columna derivada].Columns[Year]"
+                      name="Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expresión de columna derivada"
+                          name="Expression">[SUBSTRING](#{Package\ETL Clima\Convertir a Texto.Outputs[Salida de columna derivada].Columns[YearMonth_Text]},1,4)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expresión descriptiva de columna derivada"
+                          expressionType="Notify"
+                          name="FriendlyExpression">SUBSTRING(YearMonth_Text,1,4)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Dividir columnas.Outputs[Salida de columna derivada].Columns[Month]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Cálculo"
+                      errorRowDisposition="FailComponent"
+                      length="2"
+                      lineageId="Package\ETL Clima\Dividir columnas.Outputs[Salida de columna derivada].Columns[Month]"
+                      name="Month"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expresión de columna derivada"
+                          name="Expression">[SUBSTRING](#{Package\ETL Clima\Convertir a Texto.Outputs[Salida de columna derivada].Columns[YearMonth_Text]},5,2)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expresión descriptiva de columna derivada"
+                          expressionType="Notify"
+                          name="FriendlyExpression">SUBSTRING(YearMonth_Text,5,2)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL Clima\Dividir columnas.Outputs[Salida de error de columna derivada]"
+                  description="Salida de error de la transformación Columna derivada"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de columna derivada"
+                  synchronousInputId="Package\ETL Clima\Dividir columnas.Inputs[Entrada de columna derivada]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Clima\Dividir columnas.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL Clima\Dividir columnas.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL Clima\Dividir columnas.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL Clima\Dividir columnas.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL Clima\Origen Datos Anual"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Origen de archivo plano"
+              localeId="1033"
+              name="Origen Datos Anual"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si las columnas de longitud cero se tratan como NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL Clima\Origen Datos Anual.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador CSV Anual]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador CSV Anual]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\ETL Clima\Origen Datos Anual.Outputs[Salida de origen de archivo plano]"
+                  name="Salida de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Anual.Outputs[Salida de origen de archivo plano].Columns[Anomaly]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Clima\Origen Datos Anual.Outputs[Salida de origen de archivo plano].ExternalColumns[Anomaly]"
+                      lineageId="Package\ETL Clima\Origen Datos Anual.Outputs[Salida de origen de archivo plano].Columns[Anomaly]"
+                      name="Anomaly"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Anual.Outputs[Salida de origen de archivo plano].Columns[Year]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Clima\Origen Datos Anual.Outputs[Salida de origen de archivo plano].ExternalColumns[Year]"
+                      length="50"
+                      lineageId="Package\ETL Clima\Origen Datos Anual.Outputs[Salida de origen de archivo plano].Columns[Year]"
+                      name="Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Origen Datos Anual.Outputs[Salida de origen de archivo plano].ExternalColumns[Anomaly]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Anomaly" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Origen Datos Anual.Outputs[Salida de origen de archivo plano].ExternalColumns[Year]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Year" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\ETL Clima\Origen Datos Anual.Outputs[Salida de error de origen de archivo plano]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Anual.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Columna de salida de error de origen de archivo plano"
+                      lineageId="Package\ETL Clima\Origen Datos Anual.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      name="Columna de salida de error de origen de archivo plano" />
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Anual.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL Clima\Origen Datos Anual.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Anual.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL Clima\Origen Datos Anual.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL Clima\Origen Datos Mensual"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Origen de archivo plano"
+              localeId="1033"
+              name="Origen Datos Mensual"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si las columnas de longitud cero se tratan como NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL Clima\Origen Datos Mensual.Connections[FlatFileConnection]"
+                  connectionManagerID="{6E634849-1965-46CD-BEA4-4B1FA1DBFE4B}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Administrador CSV]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\ETL Clima\Origen Datos Mensual.Outputs[Salida de origen de archivo plano]"
+                  name="Salida de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Mensual.Outputs[Salida de origen de archivo plano].Columns[Year + Mes]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Clima\Origen Datos Mensual.Outputs[Salida de origen de archivo plano].ExternalColumns[Year + Mes]"
+                      lineageId="Package\ETL Clima\Origen Datos Mensual.Outputs[Salida de origen de archivo plano].Columns[Year + Mes]"
+                      name="Year + Mes"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Mensual.Outputs[Salida de origen de archivo plano].Columns[Anomaly]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Clima\Origen Datos Mensual.Outputs[Salida de origen de archivo plano].ExternalColumns[Anomaly]"
+                      lineageId="Package\ETL Clima\Origen Datos Mensual.Outputs[Salida de origen de archivo plano].Columns[Anomaly]"
+                      name="Anomaly"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Origen Datos Mensual.Outputs[Salida de origen de archivo plano].ExternalColumns[Year + Mes]"
+                      dataType="i4"
+                      name="Year + Mes" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Origen Datos Mensual.Outputs[Salida de origen de archivo plano].ExternalColumns[Anomaly]"
+                      dataType="r4"
+                      name="Anomaly" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\ETL Clima\Origen Datos Mensual.Outputs[Salida de error de origen de archivo plano]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Mensual.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Columna de salida de error de origen de archivo plano"
+                      lineageId="Package\ETL Clima\Origen Datos Mensual.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      name="Columna de salida de error de origen de archivo plano" />
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Mensual.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL Clima\Origen Datos Mensual.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Mensual.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL Clima\Origen Datos Mensual.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL Clima\Origen Datos Regiones"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Origen de archivo plano"
+              localeId="1033"
+              name="Origen Datos Regiones"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si las columnas de longitud cero se tratan como NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL Clima\Origen Datos Regiones.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador CSV Regional]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador CSV Regional]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano]"
+                  name="Salida de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[Year]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[Year]"
+                      length="50"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[Year]"
+                      name="Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[Glob]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[Glob]"
+                      length="50"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[Glob]"
+                      name="Glob"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[NHem]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[NHem]"
+                      length="50"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[NHem]"
+                      name="NHem"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[SHem]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[SHem]"
+                      length="50"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[SHem]"
+                      name="SHem"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[24N-90N]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[24N-90N]"
+                      length="50"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[24N-90N]"
+                      name="24N-90N"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[24S-24N]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[24S-24N]"
+                      length="50"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[24S-24N]"
+                      name="24S-24N"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[90S-24S]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[90S-24S]"
+                      length="50"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[90S-24S]"
+                      name="90S-24S"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[64N-90N]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[64N-90N]"
+                      length="50"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[64N-90N]"
+                      name="64N-90N"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[44N-64N]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[44N-64N]"
+                      length="50"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[44N-64N]"
+                      name="44N-64N"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[24N-44N]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[24N-44N]"
+                      length="50"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[24N-44N]"
+                      name="24N-44N"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[EQU-24N]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[EQU-24N]"
+                      length="50"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[EQU-24N]"
+                      name="EQU-24N"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[24S-EQU]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[24S-EQU]"
+                      length="50"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[24S-EQU]"
+                      name="24S-EQU"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[44S-24S]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[44S-24S]"
+                      length="50"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[44S-24S]"
+                      name="44S-24S"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[64S-44S]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[64S-44S]"
+                      length="50"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[64S-44S]"
+                      name="64S-44S"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[90S-64S]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[90S-64S]"
+                      length="50"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].Columns[90S-64S]"
+                      name="90S-64S"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[Year]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Year" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[Glob]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Glob" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[NHem]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="NHem" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[SHem]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="SHem" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[24N-90N]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="24N-90N" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[24S-24N]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="24S-24N" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[90S-24S]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="90S-24S" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[64N-90N]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="64N-90N" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[44N-64N]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="44N-64N" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[24N-44N]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="24N-44N" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[EQU-24N]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="EQU-24N" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[24S-EQU]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="24S-EQU" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[44S-24S]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="44S-24S" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[64S-44S]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="64S-44S" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano].ExternalColumns[90S-64S]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="90S-64S" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de error de origen de archivo plano]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Columna de salida de error de origen de archivo plano"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      name="Columna de salida de error de origen de archivo plano" />
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\ETL Clima.Paths[Salida de columna derivada]"
+              endId="Package\ETL Clima\Dividir columnas.Inputs[Entrada de columna derivada]"
+              name="Salida de columna derivada"
+              startId="Package\ETL Clima\Convertir a Texto.Outputs[Salida de columna derivada]" />
+            <path
+              refId="Package\ETL Clima.Paths[Salida de columna derivada1]"
+              endId="Package\ETL Clima\Destino Tabla Mensual.Inputs[Entrada de destino de ADO NET]"
+              name="Salida de columna derivada"
+              startId="Package\ETL Clima\Dividir columnas.Outputs[Salida de columna derivada]" />
+            <path
+              refId="Package\ETL Clima.Paths[Salida de conversión de datos]"
+              endId="Package\ETL Clima\Destino Tablas Anual.Inputs[Entrada de destino de ADO NET]"
+              name="Salida de conversión de datos"
+              startId="Package\ETL Clima\Convertir a Números.Outputs[Salida de conversión de datos]" />
+            <path
+              refId="Package\ETL Clima.Paths[Salida de conversión de datos1]"
+              endId="Package\ETL Clima\Destino Tabla Regiones.Inputs[Entrada de destino de ADO NET]"
+              name="Salida de conversión de datos"
+              startId="Package\ETL Clima\Convertir a datos numéricos.Outputs[Salida de conversión de datos]" />
+            <path
+              refId="Package\ETL Clima.Paths[Salida de origen de archivo plano]"
+              endId="Package\ETL Clima\Convertir a Texto.Inputs[Entrada de columna derivada]"
+              name="Salida de origen de archivo plano"
+              startId="Package\ETL Clima\Origen Datos Mensual.Outputs[Salida de origen de archivo plano]" />
+            <path
+              refId="Package\ETL Clima.Paths[Salida de origen de archivo plano1]"
+              endId="Package\ETL Clima\Convertir a Números.Inputs[Entrada de conversión de datos]"
+              name="Salida de origen de archivo plano"
+              startId="Package\ETL Clima\Origen Datos Anual.Outputs[Salida de origen de archivo plano]" />
+            <path
+              refId="Package\ETL Clima.Paths[Salida de origen de archivo plano2]"
+              endId="Package\ETL Clima\Convertir a datos numéricos.Inputs[Entrada de conversión de datos]"
+              name="Salida de origen de archivo plano"
+              startId="Package\ETL Clima\Origen Datos Regiones.Outputs[Salida de origen de archivo plano]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="124.8,41.6"
+          Id="Package\ETL Clima"
+          TopLeft="276.428572017015,95.5882352103308" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\ETL Clima">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="181.6,41.6"
+          Id="Package\ETL Clima\Origen Datos Mensual"
+          TopLeft="75.3333322107793,116.666664928198" />
+        <NodeLayout
+          Size="160,41.6"
+          Id="Package\ETL Clima\Convertir a Texto"
+          TopLeft="84.1666654124852,199.166663698852" />
+        <EdgeLayout
+          Id="Package\ETL Clima.Paths[Salida de origen de archivo plano]"
+          TopLeft="165.149998811632,158.266664928198">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40.8999987706542"
+              Start="0,0"
+              End="0,33.3999987706542">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.3999987706542" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\ETL Clima\Dividir columnas"
+          TopLeft="82.4999987706538,279.166662506759" />
+        <EdgeLayout
+          Id="Package\ETL Clima.Paths[Salida de columna derivada]"
+          TopLeft="162.33333209157,240.766663698852">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,38.3999988079071"
+              Start="0,0"
+              End="0,30.8999988079071">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.8999988079071" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="184.8,41.6"
+          Id="Package\ETL Clima\Destino Tabla Mensual"
+          TopLeft="74.1666655614968,367.499994523823" />
+        <EdgeLayout
+          Id="Package\ETL Clima.Paths[Salida de columna derivada1]"
+          TopLeft="163.533332166075,320.766662506759">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,46.7333320170641"
+              Start="0,0"
+              End="0,39.2333320170641">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.2333320170641" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="169.6,41.6"
+          Id="Package\ETL Clima\Origen Datos Anual"
+          TopLeft="363.333327919245,116.666664928198" />
+        <NodeLayout
+          Size="175.2,41.6"
+          Id="Package\ETL Clima\Convertir a Números"
+          TopLeft="358.333327993751,192.499997131526" />
+        <EdgeLayout
+          Id="Package\ETL Clima.Paths[Salida de origen de archivo plano1]"
+          TopLeft="447.033327956498,158.266664928198">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,34.2333322033286"
+              Start="0,0"
+              End="0,26.7333322033286">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.7333322033286" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="177.6,41.6"
+          Id="Package\ETL Clima\Destino Tablas Anual"
+          TopLeft="359.999994635582,273.333329260349" />
+        <EdgeLayout
+          Id="Package\ETL Clima.Paths[Salida de conversión de datos]"
+          TopLeft="447.366661314666,234.099997131526">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39.2333321288226"
+              Start="0,0"
+              End="0,31.7333321288226">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.7333321288226" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="185.6,41.6"
+          Id="Package\ETL Clima\Origen Datos Regiones"
+          TopLeft="645.833323709667,116.666664928198" />
+        <NodeLayout
+          Size="210.4,41.6"
+          Id="Package\ETL Clima\Convertir a datos numéricos"
+          TopLeft="636.666657179594,188.333330526948" />
+        <EdgeLayout
+          Id="Package\ETL Clima.Paths[Salida de origen de archivo plano2]"
+          TopLeft="740.24999044463,158.266664928198">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,30.0666655987501"
+              Start="0,0"
+              End="0,22.5666655987501">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.5666655987501" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="188.8,41.6"
+          Id="Package\ETL Clima\Destino Tabla Regiones"
+          TopLeft="652.499990276992,264.166662730276" />
+        <EdgeLayout
+          Id="Package\ETL Clima.Paths[Salida de conversión de datos1]"
+          TopLeft="744.383323728293,229.933330526948">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,34.2333322033284"
+              Start="0,0"
+              End="0,26.7333322033284">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.7333322033284" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL Clima\Destino Tabla Mensual">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL Clima\Destino Tablas Anual">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL Clima\Destino Tabla Regiones">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
