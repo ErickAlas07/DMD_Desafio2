@@ -1,0 +1,453 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6b956002-7e9b-443e-9840-0d269cc0d5a9" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Climate Data View</ID>
+  <Name>Climate Data View</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2671" scrolltop="-5670" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="20828" y="11536" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="regional_anomalies" left="6020" top="0" logicalid="4" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_regional_anomalies" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="monthly_anomalies" left="20" top="0" logicalid="5" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="1947" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_monthly_anomalies" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="annual_anomalies" left="12020" top="0" logicalid="6" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000034060000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_annual_anomalies" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2671</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5670</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="69d9cd41-dcc6-44df-871c-5a855a86a2c3">
+      <ID>Annual Anomalies</ID>
+      <Name>Annual Anomalies</Name>
+      <DimensionID>Annual Anomalies</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="01126b4c-7a42-40c0-9cd1-dda45c985733">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7a22b34a-4d34-4485-bede-f63fe2a689cc">
+          <AttributeID>Anomaly</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="7e9e0939-7dd8-484a-b057-5a88bef32531">
+      <ID>Monthly Anomalies</ID>
+      <Name>Monthly Anomalies</Name>
+      <DimensionID>Monthly Anomalies</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c3af0e11-f6d8-4561-90c7-cad8846519f1">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e910e668-209c-430e-8f72-aa4533035994">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="222a2c8c-488d-4c6e-8554-11283bd98c74">
+          <AttributeID>Anomaly</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="74eddef9-234d-409e-aeb2-bfaf9014f546">
+          <HierarchyID>Jerarquía</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="a3a82dff-249e-413d-a017-18aac24b9344">
+      <ID>Regional Anomalies</ID>
+      <Name>Regional Anomalies</Name>
+      <DimensionID>Regional Anomalies</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="02f3f4c2-a616-4764-b75f-a691346e8c1d">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8a177c24-a550-4ba2-a751-3bf6ec28b95f">
+          <AttributeID>Global</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="10ef3be9-6054-4a3b-b87d-fd2e4db05552">
+          <AttributeID>N Hem</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fe71aea6-04ae-4fbd-87e3-9a1e6c5f9fa2">
+          <AttributeID>S Hem</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="fb0739a5-e952-46ff-a81a-c67e845b407a">
+      <ID>Annual Anomalies</ID>
+      <Name>Annual Anomalies</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="bbf9fb4a-f600-4d5b-8c4c-fa3404281560">
+          <ID>Anomaly</ID>
+          <Name>Anomaly</Name>
+          <Source dwd:design-time-name="63207202-7d14-4947-b8a1-a9ccbe413ed1">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b7432098-d854-4930-b5a8-a3e1de54e716">
+              <TableID>dbo_annual_anomalies</TableID>
+              <ColumnID>Anomaly</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="78041ba3-788a-4f3d-adb3-b44d9d7ad287">
+          <CubeDimensionID>Annual Anomalies</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3c7386b1-146c-4285-a5be-63587276f321">
+              <AttributeID>Year</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3caefce7-26c0-490b-8b1b-cb1a328fcdf7">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="57a76e40-1bae-4679-b047-08efa4af8bc2">
+                    <TableID>dbo_annual_anomalies</TableID>
+                    <ColumnID>Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="0fe5bec2-8313-4783-be88-98f859c23fb9">
+      <ID>Monthly Anomalies</ID>
+      <Name>Monthly Anomalies</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="ab8d0094-3113-4bd1-8ee6-1d0cde241994">
+          <ID>Anomaly - Monthly Anomalies</ID>
+          <Name>Anomaly - Monthly Anomalies</Name>
+          <Source dwd:design-time-name="ce56a527-18c6-4889-aea7-eca3618d44d8">
+            <DataType>Single</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bc53c411-6640-4224-a0c3-eae4cce4325d">
+              <TableID>dbo_monthly_anomalies</TableID>
+              <ColumnID>Anomaly</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="47e387c6-c985-40ac-9f64-1e860f2a3625">
+          <CubeDimensionID>Monthly Anomalies</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b95e050f-3040-490c-b0f8-98614c6df8c6">
+              <AttributeID>Year</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="81d29de3-5279-4486-8774-a6a33cceaf56">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b0066a4d-9850-4d24-b0b1-aaf8912356a7">
+                    <TableID>dbo_monthly_anomalies</TableID>
+                    <ColumnID>Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="1bf20578-3a9d-4f74-be5f-e41835fb6850">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cdbf025b-3f1f-45f5-b1a7-2e6410053535">
+                    <TableID>dbo_monthly_anomalies</TableID>
+                    <ColumnID>Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="3c5a7660-1ceb-461c-a1fd-218cae46ff13">
+      <ID>Regional Anomalies</ID>
+      <Name>Regional Anomalies</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="4e22195b-4f05-451b-af1c-192edf2b316e">
+          <ID>Global</ID>
+          <Name>Global</Name>
+          <Source dwd:design-time-name="f5961450-ff57-4f03-b2f4-265f8946f373">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="796fb28d-0954-4106-b3b4-a6dde4463f72">
+              <TableID>dbo_regional_anomalies</TableID>
+              <ColumnID>Global</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5bbb9ef1-05dd-47df-9d06-0072c5662250">
+          <ID>N Hem</ID>
+          <Name>N Hem</Name>
+          <Source dwd:design-time-name="babe2a97-3188-4d92-a88c-3cd6bafa4ab5">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="83b270a4-8253-454c-8973-b18268631bcd">
+              <TableID>dbo_regional_anomalies</TableID>
+              <ColumnID>NHem</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3687d831-9006-4190-9445-461ffe253ed0">
+          <ID>S Hem</ID>
+          <Name>S Hem</Name>
+          <Source dwd:design-time-name="81c4149a-cd64-4d55-88c1-003dfe872a89">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2b01ae23-92dd-4a06-b5ce-945884b7be31">
+              <TableID>dbo_regional_anomalies</TableID>
+              <ColumnID>SHem</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4beab5a5-f90c-4bef-9c4d-525b7d838f7a">
+          <ID>24N-90N</ID>
+          <Name>24N-90N</Name>
+          <Source dwd:design-time-name="ecd89c4f-3c60-444a-8d30-dbb87fbfd31a">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e69a1f14-023f-4f91-b852-088bcd1e2a1d">
+              <TableID>dbo_regional_anomalies</TableID>
+              <ColumnID>_x0032_4N-90N</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e571fd95-a7cd-457c-8bd2-dbccecd9d60c">
+          <ID>24S-24N</ID>
+          <Name>24S-24N</Name>
+          <Source dwd:design-time-name="06898573-651d-46f1-abdc-d95a198a2bae">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0d38f348-6882-4388-a56f-f8a457873cfb">
+              <TableID>dbo_regional_anomalies</TableID>
+              <ColumnID>_x0032_4S-24N</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="6ede11da-ef18-4811-9d0f-2858b5ada209">
+          <ID>90S-24S</ID>
+          <Name>90S-24S</Name>
+          <Source dwd:design-time-name="8fc152b1-d1ac-4b53-877d-b1e19c97ca21">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4519b2e9-f138-4ea5-a65b-8212675829c6">
+              <TableID>dbo_regional_anomalies</TableID>
+              <ColumnID>_x0039_0S-24S</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b757ab9c-fe22-46fe-ba6c-a6e7a990af30">
+          <ID>64N-90N</ID>
+          <Name>64N-90N</Name>
+          <Source dwd:design-time-name="80e080d8-984e-4740-8e27-627e83a09e1d">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="86d9de2c-dbdb-4063-98ba-860c5bcd8410">
+              <TableID>dbo_regional_anomalies</TableID>
+              <ColumnID>_x0036_4N-90N</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="82b1b81e-0688-403c-a4fe-f70dd1815d27">
+          <ID>44N-64N</ID>
+          <Name>44N-64N</Name>
+          <Source dwd:design-time-name="c4b696ff-a83b-433a-895b-c07c4a29533f">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="10a2885a-c294-4d34-b192-d4896957ad50">
+              <TableID>dbo_regional_anomalies</TableID>
+              <ColumnID>_x0034_4N-64N</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="db4464a9-3069-47e3-b046-971b542f3ee7">
+          <ID>24N-44N</ID>
+          <Name>24N-44N</Name>
+          <Source dwd:design-time-name="f9c79f70-e85a-4925-9854-897fd4a19c9b">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a1bfa169-9b53-4719-8ec9-68cd21151e21">
+              <TableID>dbo_regional_anomalies</TableID>
+              <ColumnID>_x0032_4N-44N</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="de4a3f02-3027-4a68-82f5-651572a6b342">
+          <ID>EQU-24N</ID>
+          <Name>EQU-24N</Name>
+          <Source dwd:design-time-name="42004db2-2f40-434c-bbd8-e2857699cb36">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7d04b2de-4454-46af-b5d2-7ca5f748e859">
+              <TableID>dbo_regional_anomalies</TableID>
+              <ColumnID>EQU-24N</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="bd84f583-726f-40d3-a9bb-96e765784b44">
+          <ID>24S-EQU</ID>
+          <Name>24S-EQU</Name>
+          <Source dwd:design-time-name="494f9421-fe52-466c-8cfe-bc81a0dc542c">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b7fa0851-bf4b-4e3f-8b59-1a08f130c1be">
+              <TableID>dbo_regional_anomalies</TableID>
+              <ColumnID>_x0032_4S-EQU</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="94fc108d-28aa-470d-8bb9-7e319ed2fefc">
+          <ID>44S-24S</ID>
+          <Name>44S-24S</Name>
+          <Source dwd:design-time-name="f617a7be-ebfc-486d-97c6-992618a9178d">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="50ed4a83-a228-462f-a4fb-30f78d617d46">
+              <TableID>dbo_regional_anomalies</TableID>
+              <ColumnID>_x0034_4S-24S</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="31d98787-d5a5-4afd-a109-b089f6127ba9">
+          <ID>64S-44S</ID>
+          <Name>64S-44S</Name>
+          <Source dwd:design-time-name="49a826e5-affd-4877-9b3a-6d05017b7d56">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="83f11068-f449-4713-9e48-0a15f45eb24a">
+              <TableID>dbo_regional_anomalies</TableID>
+              <ColumnID>_x0036_4S-44S</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="caa3cd9b-38dc-4673-b694-74612d3b8e41">
+          <ID>90S-64S</ID>
+          <Name>90S-64S</Name>
+          <Source dwd:design-time-name="b4f70218-2494-4429-8d41-06b0d9ed32e5">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5f8796d6-004c-481a-99fb-e89af4dca415">
+              <TableID>dbo_regional_anomalies</TableID>
+              <ColumnID>_x0039_0S-64S</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="efc4ff7a-0391-4220-9a74-e57882127ac5">
+          <CubeDimensionID>Regional Anomalies</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fc48239a-cac8-4ef1-8a03-d1fb0f0b2b33">
+              <AttributeID>Year</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="16dfad4f-7632-4bbf-a6da-4a0638ba7174">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="eba2be2b-8671-428b-8752-a2ac54144862">
+                    <TableID>dbo_regional_anomalies</TableID>
+                    <ColumnID>Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="9453774f-aa9a-48d7-906f-6e0c958582fc">
+    <DataSourceViewID>Climate Data View</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="a11bbaf5-eb54-4ca1-b653-eb496fadd141">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+El comando CALCULATE controla la agregación de celdas hoja en el cubo.
+Si se elimina o modifica el comando CALCULATE, se ven afectados los datos del cubo.
+Solo debe editar este comando si especifica manualmente cómo se agrega el cubo.
+*/
+CALCULATE; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+</Cube>

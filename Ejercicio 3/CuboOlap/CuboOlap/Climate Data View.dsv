@@ -1,0 +1,96 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="371935da-4f24-48f6-92bb-0b5f35049672" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Climate Data View</ID>
+  <Name>Climate Data View</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+      <Value>1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Climate Data</DataSourceID>
+  <Schema>
+    <xs:schema id="Climate_x0020_Data_x0020_View" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Climate_x0020_Data_x0020_View" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="123e3dfb-09e6-4fb5-9826-b935f90ece8c">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_annual_anomalies" msprop:DbTableName="annual_anomalies" msprop:FriendlyName="annual_anomalies" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="bbe79e5c-8d5e-468f-9681-b6ccdf08dc05">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Year" msprop:FriendlyName="Year" msprop:DbColumnName="Year" msprop:design-time-name="b4c8f012-0997-4fda-bf34-335d2572e803" type="xs:int" minOccurs="0" />
+                  <xs:element name="Anomaly" msprop:FriendlyName="Anomaly" msprop:DbColumnName="Anomaly" msprop:design-time-name="84543650-8023-43db-b4d7-448b930c4885" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_monthly_anomalies" msprop:DbTableName="monthly_anomalies" msprop:FriendlyName="monthly_anomalies" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="89d9fba8-4e34-4b5d-b6cf-c59d94055600">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Year" msprop:FriendlyName="Year" msprop:DbColumnName="Year" msprop:design-time-name="dfc11d33-0d21-4b63-8b11-9ad207159d93" type="xs:int" minOccurs="0" />
+                  <xs:element name="Month" msprop:FriendlyName="Month" msprop:DbColumnName="Month" msprop:design-time-name="694d51c5-f2aa-496f-b3cc-5455ace685a0" type="xs:short" minOccurs="0" />
+                  <xs:element name="Anomaly" msprop:FriendlyName="Anomaly" msprop:DbColumnName="Anomaly" msprop:design-time-name="5e0f6ff3-0cba-4914-a5e8-88f68699203e" type="xs:float" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_regional_anomalies" msprop:DbTableName="regional_anomalies" msprop:FriendlyName="regional_anomalies" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="ed71dd95-9eea-4776-aa6e-f2a1491379e0">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Year" msprop:FriendlyName="Year" msprop:DbColumnName="Year" msprop:design-time-name="f1faeba4-e584-4797-beee-cc7f76d3f118" type="xs:int" minOccurs="0" />
+                  <xs:element name="Global" msprop:FriendlyName="Global" msprop:DbColumnName="Global" msprop:design-time-name="cec932bc-38b9-4e58-99f9-2933de6db549" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="NHem" msprop:FriendlyName="NHem" msprop:DbColumnName="NHem" msprop:design-time-name="2caa073c-f0cb-4419-a2a4-d9d9fdada728" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="SHem" msprop:FriendlyName="SHem" msprop:DbColumnName="SHem" msprop:design-time-name="70c960c5-6ba5-4f5f-9b75-79fc51b95ea2" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="_x0032_4N-90N" msprop:FriendlyName="24N-90N" msprop:DbColumnName="24N-90N" msprop:design-time-name="e847b95f-bcc4-4e0d-b547-be4dcd8e617d" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="_x0032_4S-24N" msprop:FriendlyName="24S-24N" msprop:DbColumnName="24S-24N" msprop:design-time-name="18b095e7-f125-4f6f-a1f9-db14e34ebcba" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="_x0039_0S-24S" msprop:FriendlyName="90S-24S" msprop:DbColumnName="90S-24S" msprop:design-time-name="b1e13c8b-9416-4130-9e40-91950a63d99a" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="_x0036_4N-90N" msprop:FriendlyName="64N-90N" msprop:DbColumnName="64N-90N" msprop:design-time-name="303190bf-9af8-4563-bb84-28773378d3dd" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="_x0034_4N-64N" msprop:FriendlyName="44N-64N" msprop:DbColumnName="44N-64N" msprop:design-time-name="8fcf7b57-1732-4ad7-b34b-24974a28cda4" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="_x0032_4N-44N" msprop:FriendlyName="24N-44N" msprop:DbColumnName="24N-44N" msprop:design-time-name="2d910ad1-03b5-4de1-a0d5-3b95b4ba2546" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="EQU-24N" msprop:FriendlyName="EQU-24N" msprop:DbColumnName="EQU-24N" msprop:design-time-name="ffce6952-955c-4609-b17a-ffc92da65cf5" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="_x0032_4S-EQU" msprop:FriendlyName="24S-EQU" msprop:DbColumnName="24S-EQU" msprop:design-time-name="27d6c0d7-6acc-400c-b9b5-d05c904bc503" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="_x0034_4S-24S" msprop:FriendlyName="44S-24S" msprop:DbColumnName="44S-24S" msprop:design-time-name="801bf18c-1475-4a09-a83e-86734dd9013e" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="_x0036_4S-44S" msprop:FriendlyName="64S-44S" msprop:DbColumnName="64S-44S" msprop:design-time-name="60db7907-715a-44e8-a1b1-85c6630d1b04" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="_x0039_0S-64S" msprop:FriendlyName="90S-64S" msprop:DbColumnName="90S-64S" msprop:design-time-name="4d026653-7d17-4434-a4c7-74c9851b3b1c" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <Climate_x0020_Data_x0020_View xmlns="" />
+  </Schema>
+</DataSourceView>
